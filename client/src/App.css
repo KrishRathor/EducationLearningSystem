@@ -32,13 +32,48 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
+.primary-bgcolor {
+  background-color: rgba(226, 247, 244, 0.468);
+}
+
+.padding {
+  padding: 0px 1rem;
+}
+
+.margin {
+  margin: 5px;
+}
+
 .primary-heading {
-  background: red;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #61dafb;
+}
+
+.secondary-heading {
+  font-size: 1.3rem;
+  font-weight: 750;
+  color: #7080ee;
+}
+
+.tertiary-heading {
+  font-size: 1.1rem;
+  font-weight: 650;
+}
+
+.heading {
+  font-size: 1rem;
+  font-weight: 550;
+}
+
+.center {
+  text-align: center;
 }
 
 .flex {
@@ -65,7 +100,146 @@
   justify-content: space-evenly;
 }
 
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
+}
+
+.dropDown {
+  position: relative;
+}
+
+.dropDown:hover .dropDown-content {
+  display: block;
+}
+
+.dropDown-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.dropDown-content {
+  display: none;
+  list-style-type: none;
+  overflow: scroll;
+  position: absolute;
+  max-height: 70vh;
+  width: max-content;
+  background: #f1f1f189;
+  margin: 0;
+}
+
+.dropDown-content::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+.dropDown-content li {
+  margin: 0.4rem 0;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+.dropDown-content li:hover {
+  background-color: #F1F1F1;
+}
+
+.SearchBoxContainer {
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #EAEAEA;
+}
+
+.search-input {
+  padding: 8px;
+  font-size: 16px;
+  padding-right: 10ch;
+  padding-left: 1ch;
+  border: none;
+  background-color: transparent;
+}
+.search-input:focus-visible {
+  border: none;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 4px;
+
+}
+
+.hover-type-scale {
+  transition: all 0.2s ease-in-out;
+}
+
+.hover-type-scale:hover {
+  transform: scale(1.1);
+}
+
+.hover-type-underline {
+  transition: all 0.2s ease-in-out;
+}
+
+.hover-type-underline:hover {
+  text-decoration: underline;
+}
+
+.btn-type-1 {
+  background-color: black;
+  color: white;
+}
+
+.btn-type-2 {
+  background-color: white;
+  color: black;
+}
+
+.btn-type-3 {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.LoginSignupPage {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 32px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.LoginSignupPage label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.LoginSignupPage input,
+.LoginSignupPage select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+}
+.cart {
+  cursor: pointer;
+  padding: 7px;
+  box-sizing: border-box;
+}
+.cart:hover {
+  border: 1.2px solid;
+  border-radius: 50%;
 }
