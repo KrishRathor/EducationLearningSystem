@@ -40,7 +40,7 @@ def signup():
     username = data_from_api.get('username')
     password = data_from_api.get('password')
     email = data_from_api.get('email')
-    education_level = data_from_api.get('educationLevel')
+    education_level = data_from_api.get('education')
     gender = data_from_api.get('gender')
 
     try:
@@ -48,9 +48,9 @@ def signup():
         db.session.add(user)
         db.session.commit()
     except:
-        return jsonify({'status':'500', 'message':'internal_server_error'})
+        return jsonify({'message':'internal_server_error'}), 500
  
-    return jsonify({'status':'200', 'message':'user_created_successfully'})
+    return jsonify({'message':'user_created_successfully'}), 200
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -65,6 +65,7 @@ def login():
         return jsonify({'message':'invalid user'})
     
     return jsonify({'message':'user logged in successfully', 'user':user.email})
+
 
 if __name__ == "__main__":
     app.run(debug=True)

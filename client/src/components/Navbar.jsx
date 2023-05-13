@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass, faUserPlus, faPersonChalkboard, faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass, faPersonChalkboard, faCartShopping } from '@fortawesome/free-solid-svg-icons';
 const categories = [
     'Computer Science',
     'Business',
@@ -26,11 +26,11 @@ const Navbar = (props) => {
 
     return (
         <>
-            <div className="flex justify-space-between align-center padding primary-bgcolor  ">
-                <h1 className='primary-heading'><FontAwesomeIcon icon={faPersonChalkboard} style={{color: "#7080ee",}} /> [name]</h1>
+            <div className="flex justify-space-between align-center padding primary-bgcolor">
+                <h1 className='primary-heading'><FontAwesomeIcon icon={faPersonChalkboard} style={{color: "#7080ee"}} /> [name]</h1>
                 <div className="SearchBoxContainer">
                 <FontAwesomeIcon icon={faMagnifyingGlass} />
-                <input type="text" className='search-input' placeholder='Search for cources' />
+                <input type="text" className='search-input' placeholder='Search for courses' />
                 </div>
                 <div className='dropDown'>
                     <button className='dropDown-btn heading hover-type-underline'>Categories</button>
@@ -42,8 +42,8 @@ const Navbar = (props) => {
                 </div>
                 <span className='tertiary-heading pointer hover-type-underline'>Teach on [name]</span>
                 <FontAwesomeIcon icon={faCartShopping} className='cart'/>
-                <button className='btn-type-1 heading btn hover-type-scale'>Log in</button>
-                <button className='btn-type-2 heading btn hover-type-scale'>Sign up</button>
+                <button onClick={handleLogin} className='btn-type-1 heading btn hover-type-scale ml-10'>Log in</button>
+                <button onClick={handleSignup} className='btn-type-2 heading btn hover-type-scale'>Sign up</button>
             </div>
         </>
     )
