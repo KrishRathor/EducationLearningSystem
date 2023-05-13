@@ -10,7 +10,7 @@ function App() {
 
     return (
         <>
-          <Navbar loginSignupDisplay={loginSignupDisplay} setLoginSignupDisplay={setLoginSignupDisplay} />
+          <Navbar loginSignupDisplay={loginSignupDisplay} setLoginSignupDisplay={setLoginSignupDisplay}/>
           {
             (loginSignupDisplay === 'login' ? <Login/> : <Signup/>)
           }
