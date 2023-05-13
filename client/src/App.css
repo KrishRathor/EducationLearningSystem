@@ -107,7 +107,7 @@
 
 .flex-column {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .dropDown {
@@ -153,6 +153,7 @@
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #EAEAEA;
+  border-radius: 8px;
 }
 
 .search-input {
@@ -211,12 +212,19 @@
 }
 
 .LoginSignupPage {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 32px;
+  width: 25%;
+  padding: 25px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.h-2 {
+  max-height: 40vh;
+}
+
+.h-3 {
+  max-height: 65vh;
 }
 
 .LoginSignupPage label {
@@ -242,4 +250,61 @@
 .cart:hover {
   border: 1.2px solid;
   border-radius: 50%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.mt-1 {
+  margin-top: 1vh;
+}
+.mt-2 {
+  margin-top: 2vh;
+}
+.mt-3 {
+  margin-top: 3vh;
+}
+.mt-5 {
+  margin-top: 5vh;
+}
+.mt-8 {
+  margin-top: 8vh;
+}
+.mt-10 {
+  margin-top: 10vh;
+}
+.ml-1 {
+  margin-left: 1vw;
+}
+.ml-2 {
+  margin-left: 2vw;
+}
+.ml-5 {
+  margin-left: 5vw;
+}
+.ml-8 {
+  margin-left: 8vw;
+}
+.ml-10 {
+  margin-left: 10vw;
+}
+
+.loginSignupBox {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 80vh;
 }
